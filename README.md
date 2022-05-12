@@ -15,3 +15,7 @@ Node is fast because it is non-blocking or asynchronous nature of Node. Single T
 Let's see if you are already installed Node with running `node --version` in your terminal.
 
 If not go to https://nodejs.org/en/ and download the NodeJs to your computer based on you OS.
+
+<b>How to execute js file</b>
+
+To execute node js code we need to run `node app.js` where we pass app.js as an argument. NodeJS is an environment built on C++ using V8 engine to run the app.
