@@ -31,4 +31,33 @@ To execute node js code we need to run `node app.js` where we pass app.js as an 
 ## Node Module System
 
 <b>Global Object</b>
-Global object for JS for browser is `window` where we can find all global mehtods such as `window.console.log()`, `window.setTimeout()` etc but in Node we do not have `window` object instead we have `global`. 
+
+Global object for JS for browser is `window` where we can find all global mehtods such as `window.console.log()`, `window.setTimeout()` etc but in Node we do not have `window` object instead we have `global`.
+
+<b>Modules</b>
+
+Every file in a Node application is a module. Node automatically wraps the code in each file with an IIFE (Immediately-invoked Function Expression) to create scope. So, variables and functions defined in one file are only scoped to that file and not visible to other files unless explicitly exported.
+
+```
+// EXPORT Module
+
+var testModule = { a: 1, b: 2 };
+// ---------- ES5 ----------
+module.exports = testModule;
+// ---------- ES6 ----------
+export default testModule;
+// ---------- ES6 (child modules) ----------
+export const a = 1;
+export const b = 2;
+```
+
+```
+// IMPORT Module
+
+// ---------- ES5 ----------
+var testModule = require(./testModule);
+// ---------- ES6 ----------
+import testModule from './testModule';
+// ---------- ES6 (child modules) ----------
+import { a, b } from './testModule';
+```
