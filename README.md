@@ -61,3 +61,13 @@ import testModule from './testModule';
 // ---------- ES6 (child modules) ----------
 import { a, b } from './testModule';
 ```
+
+<b>Built-in Modules in Node</b>
+
+Node has several useful modules built in the node. You can see all modules in documentation of the Node. I am going to highlight some of them below:
+
+- path > better to use this module when working with path
+- os > is useful when working with operating system
+- fs > is useful when working with file system
+- events > it is a core module for Node js 
+- http > for creating network in application such as backend service etc
