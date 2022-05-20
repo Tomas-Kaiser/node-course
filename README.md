@@ -144,3 +144,5 @@ To list all dependecies with current installed version, we can run `npm list` or
 <b>Uninstalling a Package</b>
 
 - `npm un mongoose` or `npm uninstall mongoose` to uninstal mongoose. It is going to be removed from package.json as well as in node_modules
+
+-To install/uninstall packages globally, use -g flag such as `npm -g outdated`. 
