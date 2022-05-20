@@ -140,3 +140,7 @@ To list all dependecies with current installed version, we can run `npm list` or
 <b>DevDependencies</b>
 
 - `npm i jshint --save-dev` to use this dependency only in dev environment and not in production env. 
+
+<b>Uninstalling a Package</b>
+
+- `npm un mongoose` or `npm uninstall mongoose` to uninstal mongoose. It is going to be removed from package.json as well as in node_modules
