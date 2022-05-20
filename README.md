@@ -128,4 +128,6 @@ To list all dependecies with current installed version, we can run `npm list` or
 - `npm view mongoose dependencies` to see all version of depenecy which mongoose uses
 - `npm view mongoose versions` to see all existing versions for mongoose
 
+<b>Installing a Specific Version of a Package</b>
 
+`npm i mongoose@2.4.2` to instal specific version of mongoose
