@@ -136,3 +136,7 @@ To list all dependecies with current installed version, we can run `npm list` or
 
 - `npm outdated` to see outdated dependecies
 - `npm update` to update dependecies but only minor or patch. Not for Major upgrade of the version.
+
+<b>DevDependencies</b>
+
+- `npm i jshint --save-dev` to use this dependency only in dev environment and not in production env. 
