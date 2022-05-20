@@ -122,3 +122,10 @@ If you are using ^ or ~ in version, you should list the dependicy version with n
 
 To list all dependecies with current installed version, we can run `npm list` or `npm list --depth=0` to see just the dependencies for your app. 
 
+
+<b>Viewing Registry Info for a Package</b>
+
+- `npm view mongoose dependencies` to see all version of depenecy which mongoose uses
+- `npm view mongoose versions` to see all existing versions for mongoose
+
+
