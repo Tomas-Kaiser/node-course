@@ -83,3 +83,36 @@ Node has several useful modules built in the node. You can see all modules in do
 - Node has a few built-in modules that enable us to work with the file system, path objects, network, operating system, etc. 
 - EventEmitter is one of the core classes in Node that allows us to raise (emit) and handle events. Several built-in classes in Node derive from EventEmitter.
 - To create a class with the ability to raise events, we should extend EventEmitter: `class Logger extends EventEmitter { }`
+
+## Node Package Manager (NPM)
+
+NPM it is a command line tool as well as a registry of third party libraries that we can add to Node applicaitons.
+
+[https://www.npmjs.com/](https://www.npmjs.com/)
+
+<b>Package.json</b>
+
+Package.json is a json file that includes some basic information about the application such as its name, version, authors, address of github repository, dependencies and so on! It is basically a bunch of metadata about the application.
+
+To create package.json file run `npm init` or without answering questions you can run `npm init --yes` to skipt default questions.
+
+
+<b>Installing a Node Package</b>
+
+To instal a popular library underscore, run `npm i underscore` in your terminal.
+
+<b>Semantic Versioning</b>
+
+Also called SemVer. In package.json we have versions of different dependencies
+
+```
+  "dependencies": {
+    "mongoose": "^6.3.4", 
+    "underscore": "~1.13.3"
+  }
+```
+
+- Major.Minor.Patch - where ^ (caret) represents that we are interested in any version from 6.x.x
+- Where ~ (tidla) represents that we are interested in any version from 1.x.x
+- If we want to the specific version we just remove the carot or tidla 
+
