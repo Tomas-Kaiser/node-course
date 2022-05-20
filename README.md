@@ -116,3 +116,9 @@ Also called SemVer. In package.json we have versions of different dependencies
 - Where ~ (tidla) represents that we are interested in any version from 1.x.x
 - If we want to the specific version we just remove the carot or tidla 
 
+<b>Listing the Installed Packages</b>
+
+If you are using ^ or ~ in version, you should list the dependicy version with npm because the version in package.json does not have to show the accurate version which is installed.
+
+To list all dependecies with current installed version, we can run `npm list` or `npm list --depth=0` to see just the dependencies for your app. 
+
