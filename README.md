@@ -131,3 +131,8 @@ To list all dependecies with current installed version, we can run `npm list` or
 <b>Installing a Specific Version of a Package</b>
 
 `npm i mongoose@2.4.2` to instal specific version of mongoose
+
+<b>Updating Local Packages</b>
+
+- `npm outdated` to see outdated dependecies
+- `npm update` to update dependecies but only minor or patch. Not for Major upgrade of the version.
