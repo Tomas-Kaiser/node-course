@@ -170,3 +170,12 @@ example with exposing customers collection:
 - POST /api/customers       > to create a cusotmer
 - PUT /api/customers/1      > to update the sepcific customer with id 1
 - DELETE /api/customers/1   > to delete the sepcific customer with id 1
+
+<b>Introducing Express</b>
+
+Express is a framework for building a REST API. It supplies with a bunch of pre-build features.
+
+
+<b>Nodemon</b>
+In order to not restart server to update the changes we can globally instal nodemon (node monitor)
+`npm i -g nodemon` and then run `nodemon index.js` instead of `node index.js`
