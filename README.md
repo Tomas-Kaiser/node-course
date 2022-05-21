@@ -145,4 +145,28 @@ To list all dependecies with current installed version, we can run `npm list` or
 
 - `npm un mongoose` or `npm uninstall mongoose` to uninstal mongoose. It is going to be removed from package.json as well as in node_modules
 
--To install/uninstall packages globally, use -g flag such as `npm -g outdated`. 
+-To install/uninstall packages globally, use -g flag such as `npm -g outdated`.
+
+## RESTful API's Using Express
+
+REST stadns for <b>Re</b>presentation <b>State</b> <b>T</b>ransfer
+
+Using Http protocols we can use CRUD operations:
+- Create
+- Read
+- Update
+- Delete
+
+Http metods are:
+- GET     > to get data
+- POST    > to create data
+- PUT     > to update
+- DELETE  > to delete data
+
+example with exposing customers collection:
+
+- GET /api/customers        > to get all customers
+- GET /api/customers/1      > to get the sepcific customer with id 1
+- POST /api/customers       > to create a cusotmer
+- PUT /api/customers/1      > to update the sepcific customer with id 1
+- DELETE /api/customers/1   > to delete the sepcific customer with id 1
