@@ -179,3 +179,7 @@ Express is a framework for building a REST API. It supplies with a bunch of pre-
 
 In order to not restart server to update the changes we can globally instal nodemon (node monitor)
 `npm i -g nodemon` and then run `nodemon index.js` instead of `node index.js`
+
+<b>Environment Variables</b>
+
+we use `process.env.{envVariable}` to get env variable.
