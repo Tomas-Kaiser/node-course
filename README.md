@@ -183,3 +183,12 @@ In order to not restart server to update the changes we can globally instal node
 <b>Environment Variables</b>
 
 we use `process.env.{envVariable}` to get env variable.
+
+<b>Route Parameters</b>
+
+We use route parameters for essential or require values (2018) wheres we use query string parametrs (?sortBy=name) for anything which is optional
+
+`localhost:3000/api/posts/2018?sortBy=name`
+
+- `req.params` is an object of the required params
+- `req.query` is an object of the query string params
