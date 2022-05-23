@@ -192,3 +192,16 @@ We use route parameters for essential or require values (2018) wheres we use que
 
 - `req.params` is an object of the required params
 - `req.query` is an object of the query string params
+
+<b>Middleware</b>
+
+Middleware or middleware function is basically a function that takes a request object and either a response to the client or passes control to another middleware function.
+
+Route handler is a middleware function `(req, res) => {res.send("Hello World!")}` This middleware terminates the request response cycle.
+
+Another example is `app.use(express.json())`. This middleware is to read the request and if there is json object in the body of the request. It will parse the body of the request into a json object and then it will set the `req.body` property.
+
+When we receive the request on the server, the request goes through below pipeline (Request Processing Pipeline). We have one or more middleware function in the pipeline.
+
+![Request Process Pipeline](./img/requestProcessPipeline.png)
+
