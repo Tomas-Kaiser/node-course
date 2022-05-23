@@ -205,3 +205,16 @@ When we receive the request on the server, the request goes through below pipeli
 
 ![Request Process Pipeline](./img/requestProcessPipeline.png)
 
+<b>Custom Middleware</b>
+
+Custom middleware function contains three parameters:
+
+```
+function(req, res, next) {
+    console.log("Logic");
+    next()
+}
+```
+
+- `next()` call the next middleware function otherwise it will be stuck.
+
