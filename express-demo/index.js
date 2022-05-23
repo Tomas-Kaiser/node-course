@@ -1,4 +1,6 @@
 const Joi = require("joi");
+const helmet = require("helmet");
+const morgan = require("morgan");
 const logger = require("./logger");
 const auth = require("./authentication");
 const express = require("express");
@@ -7,9 +9,9 @@ const app = express();
 
 // To anable to parse json in Express app when sending json inside of the body request
 app.use(express.json());
-
+app.use(helmet());
+app.use(morgan("tiny"));
 app.use(logger);
-
 app.use(auth);
 
 const courses = [

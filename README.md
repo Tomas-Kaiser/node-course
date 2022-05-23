@@ -218,3 +218,17 @@ function(req, res, next) {
 
 - `next()` call the next middleware function otherwise it will be stuck.
 
+<b>Built-in Middleware</b>
+
+We have several built-in middleware such as:
+
+- `app.use(express.json())`
+- `app.use(express.urlencoded({ extend: true }))`
+- `app.use(express.static("public"))` to expose files in the public folder
+
+<b>Third-party Middleware</b>
+
+To see all avaliable [middlewares](https://expressjs.com/en/resources/middleware.html)
+
+
+
