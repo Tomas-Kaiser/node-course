@@ -238,5 +238,10 @@ or
 
 `app.get('env')` to get a current environment but if it is not set we get `development` 
 
+<b>Environments</b>
+
+There many great configuration libraries for NodeJS but we will use `config`.
+
+- `npm i config`
 
 
