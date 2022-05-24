@@ -244,4 +244,10 @@ There many great configuration libraries for NodeJS but we will use `config`.
 
 - `npm i config`
 
+<b>Debuggin</b>
+
+Instead of using `console.log()` it is better to use debugging package
+
+- `npm i debug`
+
 
