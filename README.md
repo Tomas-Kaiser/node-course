@@ -230,5 +230,13 @@ We have several built-in middleware such as:
 
 To see all avaliable [middlewares](https://expressjs.com/en/resources/middleware.html)
 
+<b>Environments</b>
+
+`process.env.NODE_ENV` to get a current environment but if it is not set we get `undefined`
+
+or
+
+`app.get('env')` to get a current environment but if it is not set we get `development` 
+
 
 

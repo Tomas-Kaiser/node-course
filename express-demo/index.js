@@ -10,9 +10,13 @@ const app = express();
 // To anable to parse json in Express app when sending json inside of the body request
 app.use(express.json());
 app.use(helmet());
-app.use(morgan("tiny"));
 app.use(logger);
 app.use(auth);
+
+if (app.get('env') === 'development'){
+    app.use(morgan("tiny"));
+    console.log("Morgan enabled...");
+}
 
 const courses = [
     {
