@@ -250,4 +250,15 @@ Instead of using `console.log()` it is better to use debugging package
 
 - `npm i debug`
 
+<b>Templating Engines</b>
+
+In case we need to send back to client a html page we can use some of hte templating engines suchs pug, mustache etc.
+
+- `npm i pug`
+- `app.set('view enigne', 'pug');`
+- `app.set('views', './views); // It is default so we do not have to mention this`
+
+In root of the app we create folder views with a file index.pug
+
+
 
